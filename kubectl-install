@@ -1,0 +1,17 @@
+# Download the latest version on kubectl
+ curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+
+# list the file download the local machine
+   # ls
+   kubectl
+
+# Download the kubectl-convert checksum file
+   # curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl.sha256"
+
+# list the file kubectl checksum file
+   # kubectl.sha256
+
+# install kubectl
+  #sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
+  # kubectl version
+  # kubectl get pods
